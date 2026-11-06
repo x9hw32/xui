@@ -1,0 +1,14 @@
+Package: local.rajok.xui-rootless
+Name: XUI
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: rajok
+Author: rajok
+Section: Tweaks
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.17)
+Description: iPhone X gestures, home indicator, top-right Control Center, rounded dock with stock iPhone 8 status bar for iPhone 8 on iOS 16.
+Conflicts: local.rajok.xui-rootful
+Homepage: https://github.com/x9hw32/xui
+Icon: https://x9hw32.github.io/xui/icons/xui.png
+Depiction: https://x9hw32.github.io/xui/depictions/xui.html
+SileoDepiction: https://x9hw32.github.io/xui/depictions/xui.json

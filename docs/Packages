@@ -1,0 +1,40 @@
+Package: local.rajok.xui-rootful
+Name: XUI
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: rajok
+Author: rajok
+Section: Tweaks
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.17)
+Description: iPhone X gestures, home indicator, top-right Control Center, rounded dock with stock iPhone 8 status bar for iPhone 8 on iOS 16.
+Conflicts: local.rajok.xui-rootless
+Homepage: https://github.com/x9hw32/xui
+Icon: https://x9hw32.github.io/xui/icons/xui.png
+Depiction: https://x9hw32.github.io/xui/depictions/xui.html
+SileoDepiction: https://x9hw32.github.io/xui/depictions/xui.json
+Filename: debs/local.rajok.xui-rootful_1.0.0_iphoneos-arm.deb
+Size: 48808
+MD5sum: 128b8bb69b90e637834c708330d667b7
+SHA256: 0fb875d2948d93faf7eaed7015876b6ea2f5c6eab380e9af4edb682c0144fa6f
+SHA512: 064cd75db305f9e5e7f29e705864998263b12f4635ddb75e1f7b72ec8881ca74f834c215779a865a021b2cc624a2f83a02a3f14df35e318bd897a22e35d1fcc4
+
+Package: local.rajok.xui-rootless
+Name: XUI
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: rajok
+Author: rajok
+Section: Tweaks
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.17)
+Description: iPhone X gestures, home indicator, top-right Control Center, rounded dock with stock iPhone 8 status bar for iPhone 8 on iOS 16.
+Conflicts: local.rajok.xui-rootful
+Homepage: https://github.com/x9hw32/xui
+Icon: https://x9hw32.github.io/xui/icons/xui.png
+Depiction: https://x9hw32.github.io/xui/depictions/xui.html
+SileoDepiction: https://x9hw32.github.io/xui/depictions/xui.json
+Filename: debs/local.rajok.xui-rootless_1.0.0_iphoneos-arm64.deb
+Size: 48850
+MD5sum: f5eee86bf1339d526f63804c3e3f3664
+SHA256: 018902da83e3bee896f2e58490c54787df94465861b98bc80b454ecff9455348
+SHA512: cec9b005baec7b166aee9572250a6ffbddad17434c2585784c150485b3f057c22440248603cdc974467f089605c56266a7dff4cdd6c995399c6d357b55191aa6
+

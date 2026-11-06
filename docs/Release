@@ -1,0 +1,25 @@
+Origin: rajok
+Label: rajok Repo
+Suite: stable
+Codename: xui
+Version: 1.0
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: XUI by rajok for iPhone 8 on iOS 16
+Date: Fri, 06 Nov 2026 21:10:19 GMT
+Icon: https://x9hw32.github.io/xui/CydiaIcon.png
+MD5Sum:
+ 38a45946e5525d6df81ee95d7ed531e2             1927 Packages
+ 59c502b374b2206d8b419566722a4575              772 Packages.gz
+ d469b348f047c1a5f6e5b5adf601ba39              915 Packages.bz2
+ 3e252eb9d332762659c98225293d6913              820 Packages.xz
+SHA256:
+ fd5dcfa0e5bfea84ecbbf07f19c85176a54ebadb20d0002733c3c81c7549504b             1927 Packages
+ e189f0305e4d4403d6bb7c5aada2e91a6a2accd1efe5b6dd096d04fd5c435ca2              772 Packages.gz
+ dba86d59d5735e1d7f4be4f22b039e1f182b23f7cecdf90be78e6d2878c3cfe7              915 Packages.bz2
+ d4594e7f0c06fda4e32cbab31df2b695508a1a2c8cd92841114cc5d310b8a436              820 Packages.xz
+SHA512:
+ 4eb430d6ece12634220ad8edfd61d3e2c252fda345d7430fe1d661e58be1850206ae83bbab849815809a5e1b6545fedf56f9f87036170d092f23ac3a386e43a0             1927 Packages
+ 7a4b29a6e16b35e19bbf51cddcb3a2770eb07cf099cdc9aca48f7253e66fc02d33ef54164ad1b12d546bca9ba171ff886963ee49ce324488737e04b8d6050c0a              772 Packages.gz
+ d2339b22d5b7bbf895fc2d730ba200c95ffbd407779cfa4406fb10373c3fff7cac3b29c20fd14c5fb8d3921291532225005ede92ba4228f3dee6a1b6dd4a478c              915 Packages.bz2
+ 58e462a50799a27cf4c52a2d49cf9ccce6d3cfd51d03a37177cf499da9ae502fad86c98511b0814295acb209dc2390bd672b614c0812241215c8e94eabd5f1de              820 Packages.xz

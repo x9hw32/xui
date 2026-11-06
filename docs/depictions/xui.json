@@ -1,0 +1,36 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tintColor": "#b26c91",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "XUI",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "XUI"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "iPhone X gestures, a home indicator, floating dock, native flashlight and camera buttons on the Lock Screen, and adjustable app/keyboard spacing. Russian and English Settings. Stock iPhone 8 status bar.\n\nSupports iPhone 8 (iPhone10,1 / iPhone10,4), iOS 16. Rootless tested on iOS 16.7.16. Rootful build awaits device testing. LiquidAss is optional and is not included.\n\nЖесты iPhone X, нижняя полоса, плавающий док, нативные кнопки фонарика и камеры, настраиваемые отступы приложений и клавиатуры. Настройки на русском и английском."
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "rajok"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Devices",
+          "text": "iPhone 8 · iOS 16"
+        }
+      ]
+    }
+  ]
+}
