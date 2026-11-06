@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Package the unmodified upstream iOS26Anim build for iPhone 8."""
+"""Package iOS26Anim and its animation editor for iPhone 8."""
 import argparse
 import io
 from pathlib import Path
 import re
 import tarfile
+import plistlib
 
 ROOT = Path(__file__).resolve().parents[2]
 SRC = Path(__file__).resolve().parent
@@ -47,6 +48,16 @@ base = (prefix + '/Library/MobileSubstrate/DynamicLibraries/').lstrip('/')
 files = [(base + 'iOS26Anim.dylib', library.read_bytes(), 0o755),
          (base + 'iOS26Anim.plist', filter_plist, 0o644),
          ((prefix + f'/usr/share/doc/{package_id}/UPSTREAM.md').lstrip('/'), (SRC / 'UPSTREAM.md').read_bytes(), 0o644)]
+prefs = SRC / 'preferences'
+bundle = (prefix + '/Library/PreferenceBundles/IOS26AnimPrefs.bundle/').lstrip('/')
+loader = plistlib.loads((prefs / 'loader.plist').read_bytes())
+if args.rootful:
+    loader['entry']['icon'] = loader['entry']['icon'].removeprefix('/var/jb')
+files.extend([
+    (bundle + 'IOS26AnimPrefs', (ROOT / f'build/ios26anim-{scheme}/IOS26AnimPrefs').read_bytes(), 0o755),
+    ((prefix + '/Library/PreferenceLoader/Preferences/IOS26AnimPrefs.plist').lstrip('/'), plistlib.dumps(loader, sort_keys=False), 0o644)])
+for name in ['Info.plist', 'Root.plist', 'en.lproj/Root.strings', 'ru.lproj/Root.strings', 'icon.png', 'icon@2x.png', 'icon@3x.png']:
+    files.append((bundle + name, (prefs / name).read_bytes(), 0o644))
 parts = [('debian-binary', b'2.0\n'), ('control.tar.gz', tar([('control', control.encode(), 0o644)])),
          ('data.tar.gz', tar(files))]
 output = ROOT / 'build' / f'{package_id}_{version}_{arch}.deb'

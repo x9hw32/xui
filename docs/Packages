@@ -38,6 +38,26 @@ MD5sum: b47b7b3f097d3a9e574755efaa552785
 SHA256: bd73d4c071c4ed7eedbc2ff8863aa72830e0d92f7380fe958a95c71667f2a851
 SHA512: fe6ec10c6d269fa8897df944e26425e9fc9b296538fb5a996a087892f7137423cd4b57d981a4335c28dc4ea749362b8166fc0b42508a78aafcb1c1a8e7b121bf
 
+Package: local.rajok.ios26anim-rootful
+Name: iOS26Anim
+Version: 0.2.0
+Architecture: iphoneos-arm
+Maintainer: rajok
+Author: Stealth2115
+Section: Tweaks
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.17)
+Conflicts: local.rajok.ios26anim-rootless, com.yourname.ios26anim
+Description: iOS 26-style SpringBoard animations for iPhone 8 on iOS 16. Based on Stealth2115 source with an iOS 16 spring hook fix by rajok. Includes a Russian/English animation editor in Settings. ARM64; device verification pending.
+Homepage: https://github.com/Stealth2115/Ios26-anim
+Icon: https://x9hw32.github.io/xui/CydiaIcon.png
+Depiction: https://x9hw32.github.io/xui/depictions/ios26anim.html
+SileoDepiction: https://x9hw32.github.io/xui/depictions/ios26anim.json
+Filename: debs/local.rajok.ios26anim-rootful_0.2.0_iphoneos-arm.deb
+Size: 42486
+MD5sum: d078aa99dbb845380f543937f2fea286
+SHA256: c311b4eeaf2dc0f0a5cc6eb4910e5d36beffdbcf237f8fdc6251e9ecb7ddc40a
+SHA512: 60729b9528c900e5371b10371b97644a070b7741a6ba79b2696a111642038a71aec33579b6345f1065c14de41a08b49c9cc8d63c696a3400374f708109d216b4
+
 Package: local.rajok.ios26anim-rootless
 Name: iOS26Anim
 Version: 0.1.0+rajok.1
@@ -77,6 +97,26 @@ Size: 8538
 MD5sum: 8c6c8d4ac537492d390873c5243192e1
 SHA256: cc18c5a0ea74ab764199d2891880d7f1e153c5c9f8835e207979a6c3fbf89c0e
 SHA512: d695d00b1bce2182d3010fa85456a5eb6ee739cbc59a2a25a47351c9974e57b33d9c940907f39d7e657c5bc823da17c521674d9ba72f67c3a95c89ca93aa5d2b
+
+Package: local.rajok.ios26anim-rootless
+Name: iOS26Anim
+Version: 0.2.0
+Architecture: iphoneos-arm64
+Maintainer: rajok
+Author: Stealth2115
+Section: Tweaks
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.17)
+Conflicts: local.rajok.ios26anim-rootful, com.yourname.ios26anim
+Description: iOS 26-style SpringBoard animations for iPhone 8 on iOS 16. Based on Stealth2115 source with an iOS 16 spring hook fix by rajok. Includes a Russian/English animation editor in Settings. ARM64; device verification pending.
+Homepage: https://github.com/Stealth2115/Ios26-anim
+Icon: https://x9hw32.github.io/xui/CydiaIcon.png
+Depiction: https://x9hw32.github.io/xui/depictions/ios26anim.html
+SileoDepiction: https://x9hw32.github.io/xui/depictions/ios26anim.json
+Filename: debs/local.rajok.ios26anim-rootless_0.2.0_iphoneos-arm64.deb
+Size: 42536
+MD5sum: c67cb454e996cff47f8830db4f6f3228
+SHA256: 4cca751945059c0c22d76a0c90eee648692c69169caae936f157d0a3355584ec
+SHA512: 87e260e8d63be69a8c7c303d35c2d192bd16d1a3eb9475353152f9dc0c444b29ab576df61d447a82abd0f99a6baa4cb78e1fdebe8d0f587f9a586c14d09cdc20
 
 Package: local.rajok.xui-rootful
 Name: XUI

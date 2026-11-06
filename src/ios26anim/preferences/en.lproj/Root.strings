@@ -1,0 +1,17 @@
+"GENERAL" = "General";
+"APPLY_FOOTER" = "Changes take effect after Apply and respring. Existing upstream values are the defaults.";
+"ENABLED" = "Enable iOS26Anim";
+"OPENING" = "Opening an app";
+"CLOSING" = "Closing an app";
+"DURATION" = "Duration (seconds)";
+"RESPONSE" = "Spring response (seconds)";
+"DAMPING" = "Damping ratio";
+"SPRING_FOOTER" = "Lower response makes the spring faster. Lower damping adds bounce; 1 or above removes bounce. Duration affects transition paths supported by the tweak.";
+"BLUR" = "Transition blur";
+"BLUR_ENABLED" = "Enable blur overlay";
+"BLUR_ALPHA" = "Blur opacity";
+"BLUR_FOOTER" = "Controls the temporary blur layer during transitions.";
+"ACTIONS" = "Apply changes";
+"RESET" = "Reset to defaults";
+"APPLY" = "Apply and respring";
+"LIMITS_FOOTER" = "This editor tunes the iOS 16 transition hooks. It does not reproduce every iOS 26 animation or its deformation path.";

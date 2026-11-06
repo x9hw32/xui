@@ -5,7 +5,7 @@
 - Source revision: `75c5e1c71672d9290b44599d21b56d5fa3476f69`.
 - Source Tweak.x SHA-256: `2fcffe1a6bbcc5bb3b3b6fa8c03c990e2e210e0242715bfba92f7f238d28fc7b`.
 - Local package maintainer: rajok.
-- Local version: `0.1.0+rajok.2` (packaging revision, not an upstream release).
+- Local version: `0.2.0` (packaging revision, not an upstream release).
 
 The animation source is fetched at the pinned revision during the build. Its
 animation constants are preserved; local hook changes are described below. These packages target ARM64
@@ -30,3 +30,15 @@ when constructed. Existing getter overrides remain. Startup and first setter
 calls emit brief diagnostic messages. Animation tuning is unchanged.
 This fix was cross-built and statically checked; on-device verification is
 pending because the owner is updating wirelessly through Sileo.
+
+## 0.2.0: native animation editor
+
+Settings → iOS26Anim adds Enabled, separate opening/closing duration, spring
+response and damping, BlurEnabled and blur opacity. Seven numeric values are
+clamped to finite supported ranges; defaults preserve upstream tuning. The
+shared domain is local.rajok.ios26anim. Both layouts use Cephei to read/write the
+same mobile preferences. Changes apply after Apply and respring so cached spring
+presets are rebuilt. Reset restores only this tweak's known settings. Russian
+and English localization follows the system language. Disabling the tweak skips
+all hook installation on the next SpringBoard start. The editor does not add a
+new iOS 26 transition trajectory or claim a full visual copy.

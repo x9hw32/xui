@@ -15,6 +15,8 @@ if [[ -z "$IOS26_LDID" ]]; then IOS26_LDID=.tools/ldid-src/ldid; fi
 [[ -d "$IOS26_SDK" && -f "$IOS26_LOGOS" && -x "$IOS26_LDID" ]] || {
  echo "Set IOS26_SDK, IOS26_LOGOS and IOS26_LDID to the iOS SDK, Logos and ldid paths" >&2; exit 2;
 }
+IOS26_DEFINES=()
+if [[ "$IOS26_SCHEME" == rootful ]]; then IOS26_DEFINES+=(-DIOS26_ROOTFUL=1); fi
 mkdir -p "$IOS26_OUTPUT/include"
 curl -fsSL https://raw.githubusercontent.com/Stealth2115/Ios26-anim/75c5e1c71672d9290b44599d21b56d5fa3476f69/Tweak.x -o "$IOS26_OUTPUT/Tweak.x"
 python3 - "$IOS26_OUTPUT/Tweak.x" <<'VERIFY'
@@ -26,6 +28,7 @@ if hashlib.sha256(Path(sys.argv[1]).read_bytes()).hexdigest() != expected:
 VERIFY
 # Apply the local class-name and spring-preset setter compatibility fix.
 python3 src/ios26anim/apply_compat.py "$IOS26_OUTPUT/Tweak.x"
+python3 src/ios26anim/apply_editor.py "$IOS26_OUTPUT/Tweak.x"
 perl "$IOS26_LOGOS" "$IOS26_OUTPUT/Tweak.x" > "$IOS26_OUTPUT/Tweak.mm"
 cat > "$IOS26_OUTPUT/include/substrate.h" <<'HEADER'
 #pragma once
@@ -53,7 +56,7 @@ TBD
 for IOS26_ARCH in arm64; do
  clang++ --target="$IOS26_ARCH-apple-ios14.0" -isysroot "$IOS26_SDK" \
   -fobjc-arc -fblocks -fobjc-exceptions -fno-autolink -O2 -Wall -Wextra \
-  -Wno-unused-parameter -Wno-unused-variable -I "$IOS26_OUTPUT/include" \
+  -Wno-unused-parameter -Wno-unused-variable "${IOS26_DEFINES[@]}" -I src/ios26anim -I "$IOS26_OUTPUT/include" \
   -c "$IOS26_OUTPUT/Tweak.mm" -o "$IOS26_OUTPUT/$IOS26_ARCH.o"
  ld64.lld -dylib -arch "$IOS26_ARCH" -platform_version ios 14.0 16.5 \
   -adhoc_codesign -install_name "$IOS26_PREFIX/Library/MobileSubstrate/DynamicLibraries/iOS26Anim.dylib" \
@@ -64,4 +67,12 @@ for IOS26_ARCH in arm64; do
 done
 cp "$IOS26_OUTPUT/iOS26Anim-arm64.dylib" "$IOS26_OUTPUT/iOS26Anim.dylib"
 "$IOS26_LDID" -S "$IOS26_OUTPUT/iOS26Anim.dylib"
-echo "$IOS26_OUTPUT/iOS26Anim.dylib"
+clang --target=arm64-apple-ios14.0 -isysroot "$IOS26_SDK" -fobjc-arc -fblocks -fno-autolink -O2 -Wall -Wextra -Werror \
+ "${IOS26_DEFINES[@]}" -I src/ios26anim -c src/ios26anim/preferences.m -o "$IOS26_OUTPUT/preferences.o"
+ld64.lld -bundle -arch arm64 -platform_version ios 14.0 16.5 -adhoc_codesign \
+ -syslibroot "$IOS26_SDK" -L "$IOS26_SDK/usr/lib" -F "$IOS26_SDK/System/Library/Frameworks" \
+ -F "$IOS26_SDK/System/Library/PrivateFrameworks" -lSystem -lobjc \
+ -framework Foundation -framework UIKit -framework Preferences \
+ -o "$IOS26_OUTPUT/IOS26AnimPrefs" "$IOS26_OUTPUT/preferences.o"
+"$IOS26_LDID" -S "$IOS26_OUTPUT/IOS26AnimPrefs"
+echo "$IOS26_OUTPUT/iOS26Anim.dylib and IOS26AnimPrefs"

@@ -1,13 +1,13 @@
 Package: local.rajok.ios26anim-rootless
 Name: iOS26Anim
-Version: 0.1.0+rajok.2
+Version: 0.2.0
 Architecture: iphoneos-arm64
 Maintainer: rajok
 Author: Stealth2115
 Section: Tweaks
-Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.17)
 Conflicts: local.rajok.ios26anim-rootful, com.yourname.ios26anim
-Description: iOS 26-style SpringBoard animations for iPhone 8 on iOS 16. Based on Stealth2115 source with an iOS 16 spring hook fix by rajok. ARM64; device testing pending.
+Description: iOS 26-style SpringBoard animations for iPhone 8 on iOS 16. Based on Stealth2115 source with an iOS 16 spring hook fix by rajok. Includes a Russian/English animation editor in Settings. ARM64; device verification pending.
 Homepage: https://github.com/Stealth2115/Ios26-anim
 Icon: https://x9hw32.github.io/xui/CydiaIcon.png
 Depiction: https://x9hw32.github.io/xui/depictions/ios26anim.html
