@@ -6,20 +6,20 @@ Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
 Description: Packages maintained by rajok for iPhone 8 on iOS 16
-Date: Fri, 06 Nov 2026 22:11:16 GMT
+Date: Fri, 06 Nov 2026 22:22:20 GMT
 Icon: https://x9hw32.github.io/xui/CydiaIcon.png
 MD5Sum:
- 42867cc2f9394409a350c2838167e406             3974 Packages
- 69be312dc0248a7fcf6ea2e4a5bd0b13             1295 Packages.gz
- e75ff1e46b0dd570af673ad7d03d9105             1474 Packages.bz2
- 7af12dd6df33a2f1a50838d84824d023             1296 Packages.xz
+ efdd4860c76e1bce3077daab44743b1f             6059 Packages
+ 5c324df3f1f7a98784f250886b69743c             1667 Packages.gz
+ 6e28effb95b07c43bb68297bf3c02f78             1869 Packages.bz2
+ edf857fdee0e03fc673ab0386bd5859f             1620 Packages.xz
 SHA256:
- 27e903559c182c5eb69c32e3983c19cb138ed73f2cea5019bdf45536c2c561d8             3974 Packages
- 52510f9582f7cb844510e9f1061011b3fbf53e1e3cb5aeb2c20b0fd51aca667a             1295 Packages.gz
- bb83649fb065ce7dabfb23cdc64c1f989ec988c7545758448b9cfc1a559c5ddc             1474 Packages.bz2
- 84daf56d228f48fff68c1f947b47c05e3962c4c662c51d8f0d21ae0376aefc01             1296 Packages.xz
+ d10bfba783d8d088e91b7b82a78bee5952d6db901d13fb878bbc6f9e9bb734d0             6059 Packages
+ 9f44ad1c241a821a92717787f7519acd2e3f6d6d8901369e338e6daf9f7ade08             1667 Packages.gz
+ 896fdb2d6be08eec5bf0e0c8e2325f496105658cabd6bbc67e44d0f2be0fe911             1869 Packages.bz2
+ aed0a74831bcf72351a40e60521ffb09adf6df456e55d6c79e6d3b5fa563a349             1620 Packages.xz
 SHA512:
- a95861346eb27e404c981f1a5f9e735f37f30803414fbc9750b66a1decea3d4559e8157229e821bdb44313fe9ccd191f2829311f3445705e27894ff63a7aecf0             3974 Packages
- 138edc876dbfddf0c7b793d9dabaa27851088ba6f3ec960e228931ea699935266418f91ad3fd74e901253d62178e86091b573c1b98b1b44b76fd870ed8d31f00             1295 Packages.gz
- da608b1be8eefbef7de468165c4851be8d2882d51ccbb869dab1be8b8a0530d7051a4883bade8b03412a47cde0c6e899ce2c0ceccb25ca681ec28aa7fc8ac14d             1474 Packages.bz2
- c48e3e207eeaa06b81176df5741d3aefe222fc248aa889e620877ff74bbb8bc60bb29cc7609fe7b0f8a429a82eb5d1e5ca9377bd8d2a7ab75aaf61fdaffd6aec             1296 Packages.xz
+ fe4498aff03c66e10b8afa6436320cdbe63310079bd6de4cc19d7b86b9e20c4daa17f5e906a81411a4afb0394f50512be71ed11a6af4f894f3aae78af57d9c70             6059 Packages
+ fd33a89681c13723e56092b0e5c8bbb09083f3f8d584c57b14cebf701d8ee13e8cbd7c32746c2bdded8b4a458319110bfa54a1bfa69a5435ed6b1a3cb035b4c4             1667 Packages.gz
+ c754203d0041b9bbe991d70e6675bdea18355c44ac95d0abac6324ce36cd4850ea46925517ead5a0864ea5415fcf469268d094303b942eec82f4cebaf524e614             1869 Packages.bz2
+ b4f21c03a323e0a189ed19c1d0fdcebe1f08b06dbc6a23f739fa984e55f3ab91c5d172e08b0ce28aaea0ea82da2f68a1753792cfd019ed9ac2ded1c30c0ebbb0             1620 Packages.xz

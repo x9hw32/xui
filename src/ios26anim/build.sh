@@ -24,7 +24,8 @@ expected = '2fcffe1a6bbcc5bb3b3b6fa8c03c990e2e210e0242715bfba92f7f238d28fc7b'
 if hashlib.sha256(Path(sys.argv[1]).read_bytes()).hexdigest() != expected:
     raise SystemExit('Upstream source checksum mismatch')
 VERIFY
-# The upstream code is built without changing its animation constants or hooks.
+# Apply the local class-name and spring-preset setter compatibility fix.
+python3 src/ios26anim/apply_compat.py "$IOS26_OUTPUT/Tweak.x"
 perl "$IOS26_LOGOS" "$IOS26_OUTPUT/Tweak.x" > "$IOS26_OUTPUT/Tweak.mm"
 cat > "$IOS26_OUTPUT/include/substrate.h" <<'HEADER'
 #pragma once
