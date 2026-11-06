@@ -1,3 +1,43 @@
+Package: local.rajok.ios26anim-rootful
+Name: iOS26Anim
+Version: 0.1.0+rajok.1
+Architecture: iphoneos-arm
+Maintainer: rajok
+Author: Stealth2115
+Section: Tweaks
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
+Conflicts: local.rajok.ios26anim-rootless, com.yourname.ios26anim
+Description: iOS 26-style SpringBoard animations for iPhone 8 on iOS 16. Upstream build by Stealth2115; packaged by rajok. ARM64; device testing pending.
+Homepage: https://github.com/Stealth2115/Ios26-anim
+Icon: https://x9hw32.github.io/xui/CydiaIcon.png
+Depiction: https://x9hw32.github.io/xui/depictions/ios26anim.html
+SileoDepiction: https://x9hw32.github.io/xui/depictions/ios26anim.json
+Filename: debs/local.rajok.ios26anim-rootful_0.1.0+rajok.1_iphoneos-arm.deb
+Size: 7606
+MD5sum: 027ac3fb83a5b0708f10533c4646c36f
+SHA256: 3a216e9ae9ea71c21bb261e2b9f97f4f8692b097612f8d3fd6dc5297e8fd5baa
+SHA512: 544b0a5085b81974e9ad72bb3b53fa69dcfd9dae58f2729450cdc82f5279c2a08fd5721fb7dc58e1c5e4549865201af7db60e19884c1bfcef86a672d9af436fc
+
+Package: local.rajok.ios26anim-rootless
+Name: iOS26Anim
+Version: 0.1.0+rajok.1
+Architecture: iphoneos-arm64
+Maintainer: rajok
+Author: Stealth2115
+Section: Tweaks
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
+Conflicts: local.rajok.ios26anim-rootful, com.yourname.ios26anim
+Description: iOS 26-style SpringBoard animations for iPhone 8 on iOS 16. Upstream build by Stealth2115; packaged by rajok. ARM64; device testing pending.
+Homepage: https://github.com/Stealth2115/Ios26-anim
+Icon: https://x9hw32.github.io/xui/CydiaIcon.png
+Depiction: https://x9hw32.github.io/xui/depictions/ios26anim.html
+SileoDepiction: https://x9hw32.github.io/xui/depictions/ios26anim.json
+Filename: debs/local.rajok.ios26anim-rootless_0.1.0+rajok.1_iphoneos-arm64.deb
+Size: 7636
+MD5sum: b3d00bbebae4e77da00d4fd475d82964
+SHA256: cd57e25b3890966f04c23bef3a8d0ab54f36c4ce80331dc0b7efc880745feb63
+SHA512: 070bed9f28e7b66bb579a1e0fad53279b49ab9f15ada3ae6ab3c55ddd7508b9c00308948d5ccf8399a66e7e898b8adbdfcace98027d3514b98df3e6ce23c8d76
+
 Package: local.rajok.xui-rootful
 Name: XUI
 Version: 1.0.0

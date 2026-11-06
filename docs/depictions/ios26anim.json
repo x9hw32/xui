@@ -1,0 +1,40 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tintColor": "#b26c91",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "iOS26Anim",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "iOS26Anim"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "iOS 26-style app opening and closing animations for iPhone 8 on iOS 16. Upstream source by Stealth2115; rootless and rootful packages built by rajok. The original animation code and tuning are preserved. This is an approximation of iOS 26 animations, not its Metal rendering.\n\nUpstream tuning: 1.50-second opening/closing duration, spring response 0.90, damping 0.60 and blur alpha 0.95. No Settings pane; tuning requires rebuilding.\n\nАнимации открытия и закрытия приложений в стиле iOS 26. Сборки rootless и rootful для iPhone 8 на iOS 16. Автор исходников — Stealth2115, сборка пакетов — rajok. На устройстве пока не проверено."
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "0.1.0+rajok.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Stealth2115"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Devices",
+          "text": "iPhone 8 · iOS 16"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Built for ARM64 iPhone 8; device testing pending."
+        }
+      ]
+    }
+  ]
+}

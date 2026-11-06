@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "xui",
+    "name": "XUI",
+    "author": "rajok",
+    "ids": [
+      "local.rajok.xui-rootless",
+      "local.rajok.xui-rootful"
+    ],
+    "icon": "icons/xui.png",
+    "source": "https://github.com/x9hw32/xui",
+    "status": "Rootless tested; rootful device test pending.",
+    "description": "iPhone X gestures, a home indicator, floating dock, native flashlight and camera buttons on the Lock Screen, and adjustable app/keyboard spacing. Russian and English Settings. Stock iPhone 8 status bar.\n\nSupports iPhone 8 (iPhone10,1 / iPhone10,4), iOS 16. Rootless tested on iOS 16.7.16. Rootful build awaits device testing. LiquidAss is optional and is not included.\n\nЖесты iPhone X, нижняя полоса, плавающий док, нативные кнопки фонарика и камеры, настраиваемые отступы приложений и клавиатуры. Настройки на русском и английском."
+  },
+  {
+    "slug": "ios26anim",
+    "name": "iOS26Anim",
+    "author": "Stealth2115",
+    "ids": [
+      "local.rajok.ios26anim-rootless",
+      "local.rajok.ios26anim-rootful"
+    ],
+    "icon": "CydiaIcon.png",
+    "source": "https://github.com/Stealth2115/Ios26-anim",
+    "status": "Built for ARM64 iPhone 8; device testing pending.",
+    "description": "iOS 26-style app opening and closing animations for iPhone 8 on iOS 16. Upstream source by Stealth2115; rootless and rootful packages built by rajok. The original animation code and tuning are preserved. This is an approximation of iOS 26 animations, not its Metal rendering.\n\nUpstream tuning: 1.50-second opening/closing duration, spring response 0.90, damping 0.60 and blur alpha 0.95. No Settings pane; tuning requires rebuilding.\n\nАнимации открытия и закрытия приложений в стиле iOS 26. Сборки rootless и rootful для iPhone 8 на iOS 16. Автор исходников — Stealth2115, сборка пакетов — rajok. На устройстве пока не проверено."
+  }
+]

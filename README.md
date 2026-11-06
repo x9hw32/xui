@@ -51,3 +51,13 @@ Commit the updated `docs/` tree. GitHub Pages serves `docs/` from the `main` bra
 ## License
 
 Source code: MIT, see [LICENSE](LICENSE). Artwork is supplied by the repository owner and is excluded from the source-code license.
+
+## Other packages in rajok Repo
+
+**iOS26Anim** by [Stealth2115](https://github.com/Stealth2115/Ios26-anim):
+rootless and rootful ARM64 builds for iPhone 8 on iOS 16, version
+`0.1.0+rajok.1`. Built from the pinned upstream source without changing its
+animation code or tuning; device testing is pending. See
+[src/ios26anim](src/ios26anim/README.md) for build steps and provenance.
+Third-party animation code/binaries are excluded from this repository's MIT
+license. The APT catalog is described in `catalog.json`.

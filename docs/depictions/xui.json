@@ -29,6 +29,10 @@
           "class": "DepictionTableTextView",
           "title": "Devices",
           "text": "iPhone 8 · iOS 16"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Rootless tested; rootful device test pending."
         }
       ]
     }

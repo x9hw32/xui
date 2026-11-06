@@ -5,21 +5,21 @@ Codename: xui
 Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
-Description: XUI by rajok for iPhone 8 on iOS 16
-Date: Fri, 06 Nov 2026 21:10:19 GMT
+Description: Packages maintained by rajok for iPhone 8 on iOS 16
+Date: Fri, 06 Nov 2026 22:11:16 GMT
 Icon: https://x9hw32.github.io/xui/CydiaIcon.png
 MD5Sum:
- 38a45946e5525d6df81ee95d7ed531e2             1927 Packages
- 59c502b374b2206d8b419566722a4575              772 Packages.gz
- d469b348f047c1a5f6e5b5adf601ba39              915 Packages.bz2
- 3e252eb9d332762659c98225293d6913              820 Packages.xz
+ 42867cc2f9394409a350c2838167e406             3974 Packages
+ 69be312dc0248a7fcf6ea2e4a5bd0b13             1295 Packages.gz
+ e75ff1e46b0dd570af673ad7d03d9105             1474 Packages.bz2
+ 7af12dd6df33a2f1a50838d84824d023             1296 Packages.xz
 SHA256:
- fd5dcfa0e5bfea84ecbbf07f19c85176a54ebadb20d0002733c3c81c7549504b             1927 Packages
- e189f0305e4d4403d6bb7c5aada2e91a6a2accd1efe5b6dd096d04fd5c435ca2              772 Packages.gz
- dba86d59d5735e1d7f4be4f22b039e1f182b23f7cecdf90be78e6d2878c3cfe7              915 Packages.bz2
- d4594e7f0c06fda4e32cbab31df2b695508a1a2c8cd92841114cc5d310b8a436              820 Packages.xz
+ 27e903559c182c5eb69c32e3983c19cb138ed73f2cea5019bdf45536c2c561d8             3974 Packages
+ 52510f9582f7cb844510e9f1061011b3fbf53e1e3cb5aeb2c20b0fd51aca667a             1295 Packages.gz
+ bb83649fb065ce7dabfb23cdc64c1f989ec988c7545758448b9cfc1a559c5ddc             1474 Packages.bz2
+ 84daf56d228f48fff68c1f947b47c05e3962c4c662c51d8f0d21ae0376aefc01             1296 Packages.xz
 SHA512:
- 4eb430d6ece12634220ad8edfd61d3e2c252fda345d7430fe1d661e58be1850206ae83bbab849815809a5e1b6545fedf56f9f87036170d092f23ac3a386e43a0             1927 Packages
- 7a4b29a6e16b35e19bbf51cddcb3a2770eb07cf099cdc9aca48f7253e66fc02d33ef54164ad1b12d546bca9ba171ff886963ee49ce324488737e04b8d6050c0a              772 Packages.gz
- d2339b22d5b7bbf895fc2d730ba200c95ffbd407779cfa4406fb10373c3fff7cac3b29c20fd14c5fb8d3921291532225005ede92ba4228f3dee6a1b6dd4a478c              915 Packages.bz2
- 58e462a50799a27cf4c52a2d49cf9ccce6d3cfd51d03a37177cf499da9ae502fad86c98511b0814295acb209dc2390bd672b614c0812241215c8e94eabd5f1de              820 Packages.xz
+ a95861346eb27e404c981f1a5f9e735f37f30803414fbc9750b66a1decea3d4559e8157229e821bdb44313fe9ccd191f2829311f3445705e27894ff63a7aecf0             3974 Packages
+ 138edc876dbfddf0c7b793d9dabaa27851088ba6f3ec960e228931ea699935266418f91ad3fd74e901253d62178e86091b573c1b98b1b44b76fd870ed8d31f00             1295 Packages.gz
+ da608b1be8eefbef7de468165c4851be8d2882d51ccbb869dab1be8b8a0530d7051a4883bade8b03412a47cde0c6e899ce2c0ceccb25ca681ec28aa7fc8ac14d             1474 Packages.bz2
+ c48e3e207eeaa06b81176df5741d3aefe222fc248aa889e620877ff74bbb8bc60bb29cc7609fe7b0f8a429a82eb5d1e5ca9377bd8d2a7ab75aaf61fdaffd6aec             1296 Packages.xz
