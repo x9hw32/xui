@@ -56,7 +56,7 @@ if args.rootful:
 files.extend([
     (bundle + 'IOS26AnimPrefs', (ROOT / f'build/ios26anim-{scheme}/IOS26AnimPrefs').read_bytes(), 0o755),
     ((prefix + '/Library/PreferenceLoader/Preferences/IOS26AnimPrefs.plist').lstrip('/'), plistlib.dumps(loader, sort_keys=False), 0o644)])
-for name in ['Info.plist', 'Root.plist', 'en.lproj/Root.strings', 'ru.lproj/Root.strings', 'icon.png', 'icon@2x.png', 'icon@3x.png']:
+for name in ['Info.plist', 'en.lproj/Root.strings', 'ru.lproj/Root.strings', 'icon.png', 'icon@2x.png', 'icon@3x.png']:
     files.append((bundle + name, (prefs / name).read_bytes(), 0o644))
 parts = [('debian-binary', b'2.0\n'), ('control.tar.gz', tar([('control', control.encode(), 0o644)])),
          ('data.tar.gz', tar(files))]

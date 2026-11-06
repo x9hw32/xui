@@ -5,7 +5,7 @@
 - Source revision: `75c5e1c71672d9290b44599d21b56d5fa3476f69`.
 - Source Tweak.x SHA-256: `2fcffe1a6bbcc5bb3b3b6fa8c03c990e2e210e0242715bfba92f7f238d28fc7b`.
 - Local package maintainer: rajok.
-- Local version: `0.2.0` (packaging revision, not an upstream release).
+- Local version: `0.2.1` (packaging revision, not an upstream release).
 
 The animation source is fetched at the pinned revision during the build. Its
 animation constants are preserved; local hook changes are described below. These packages target ARM64
@@ -42,3 +42,12 @@ presets are rebuilt. Reset restores only this tweak's known settings. Russian
 and English localization follows the system language. Disabling the tweak skips
 all hook installation on the next SpringBoard start. The editor does not add a
 new iOS 26 transition trajectory or claim a full visual copy.
+
+## 0.2.1: repair empty Settings pane
+
+The owner reported that 0.2.0 opened an empty editor. The pane now constructs
+all sixteen native PSSpecifier rows directly and passes the array to the base
+PSListController via setSpecifiers:. It no longer relies on plist discovery.
+Localization locates the actual loaded preference bundle with dladdr and has
+English text fallbacks. Settings keys, defaults and animation code are unchanged.
+Cross-build/package checks pass; on-device confirmation is pending over Sileo.

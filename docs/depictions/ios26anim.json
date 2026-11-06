@@ -13,12 +13,12 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "iOS 26-style app opening and closing animations for iPhone 8 on iOS 16. Upstream source by Stealth2115; rootless and rootful packages built by rajok. Revision rajok.2 fixes the iOS 16 spring settings class name and also applies response/damping through setters for cached presets. Original tuning is preserved. This is an approximation of iOS 26 animations, not its Metal rendering.\n\nUpstream tuning: 1.50-second opening/closing duration, spring response 0.90, damping 0.60 and blur alpha 0.95. Version 0.2.0 adds Settings → iOS26Anim: enable/disable, separate open/close duration, spring response and damping, blur toggle and opacity, reset, and Apply and respring. Russian/English localization.\n\nАнимации открытия и закрытия приложений в стиле iOS 26. Сборки rootless и rootful для iPhone 8 на iOS 16. Автор исходников — Stealth2115, сборка пакетов — rajok. Редактор: Настройки → iOS26Anim. Отдельные параметры открытия/закрытия, упругость, размытие и сброс. Применение через респринг. Новая версия на устройстве пока не проверена."
+          "markdown": "iOS 26-style app opening and closing animations for iPhone 8 on iOS 16. Upstream source by Stealth2115; rootless and rootful packages built by rajok. Revision rajok.2 fixes the iOS 16 spring settings class name and also applies response/damping through setters for cached presets. Original tuning is preserved. This is an approximation of iOS 26 animations, not its Metal rendering.\n\nUpstream tuning: 1.50-second opening/closing duration, spring response 0.90, damping 0.60 and blur alpha 0.95. Version 0.2.1 fixes an empty Settings pane and provides Settings → iOS26Anim: enable/disable, separate open/close duration, spring response and damping, blur toggle and opacity, reset, and Apply and respring. Russian/English localization.\n\nАнимации открытия и закрытия приложений в стиле iOS 26. Сборки rootless и rootful для iPhone 8 на iOS 16. Автор исходников — Stealth2115, сборка пакетов — rajok. Редактор: Настройки → iOS26Anim. Отдельные параметры открытия/закрытия, упругость, размытие и сброс. Применение через респринг. Новая версия на устройстве пока не проверена."
         },
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "0.2.0"
+          "text": "0.2.1"
         },
         {
           "class": "DepictionTableTextView",
@@ -32,7 +32,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "ARM64 iPhone 8 / iOS 16. Animation editor; device verification pending. iOS 26 appearance is approximated."
+          "markdown": "ARM64 iPhone 8 / iOS 16. 0.2.1 repairs the empty editor; wireless device confirmation pending."
         }
       ]
     }

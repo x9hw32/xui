@@ -56,7 +56,7 @@ Source code: MIT, see [LICENSE](LICENSE). Artwork is supplied by the repository 
 
 **iOS26Anim** by [Stealth2115](https://github.com/Stealth2115/Ios26-anim):
 rootless and rootful ARM64 builds for iPhone 8 on iOS 16, version
-`0.2.0`. Includes a Russian/English animation editor in Settings. Built from
+`0.2.1`. Includes a Russian/English animation editor in Settings. Built from
 the pinned upstream source with the spring class
 name corrected and spring-preset setter hooks added; tuning is preserved.
 Wireless device verification is pending. See
